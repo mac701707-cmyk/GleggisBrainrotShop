@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Steal-A-Brainrot — Katalog</title>
-  <meta name="description" content="Produktkatalog. Bestellung & Zahlung ausschließlich über Discord." />
+  <meta name="description" content="Offizieller Produktkatalog. Bestellung über Discord." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -45,9 +45,8 @@
     .card{position:relative; background:linear-gradient(180deg, var(--card), var(--card-2)); border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:var(--shadow); transition:transform .18s ease, box-shadow .18s ease}
     .card:hover{transform:translateY(-3px); box-shadow:0 16px 36px rgba(0,0,0,.45)}
 
-    /* kleinere Bilder */
     .media{
-      aspect-ratio:6/3;
+      aspect-ratio:16/9;
       background:#0d0e10;
       display:grid;
       place-items:center;
@@ -69,15 +68,8 @@
     .title{display:flex; align-items:center; justify-content:space-between; gap:8px}
     .title h3{margin:0; font-size:18px}
     .price{font-weight:800; color:#fff; background:rgba(255,43,43,.14); border:1px solid rgba(255,43,43,.35); padding:6px 10px; border-radius:10px}
-    .meta{margin-top:6px; color:var(--muted); font-size:14px}
 
     .card.last{grid-column:1 / -1; justify-self:center; width:100%; max-width:540px}
-
-    footer{margin-top:38px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:14px}
-    .infos{margin-top:16px; display:grid; gap:10px}
-    .info-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; background:#0e0f12; border:1px solid var(--line); border-radius:12px; padding:10px 12px}
-    .info-row strong{color:#fff}
-    code{background:#0e0f12; border:1px solid var(--line); padding:2px 6px; border-radius:8px}
   </style>
 </head>
 <body>
@@ -87,12 +79,12 @@
         <span class="dot"></span>
         <h1>Steal-A-Brainrot • Katalog</h1>
       </div>
-      <a class="cta" href="https://discord.gg/KEh2TVhdrz" target="_blank" rel="noopener">Zum Discord → Checkout</a>
+      <a class="cta" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Zum Discord → Checkout</a>
     </header>
 
     <section class="hero">
       <h2>Produkte</h2>
-      <p>Reines Info-Listing. Bestellung &amp; Zahlung laufen <strong>ausschließlich über Discord</strong>. Theme: Rot/Weiß/Schwarz — clean, smooth.</p>
+      <p>Reines Info-Listing. Bestellung &amp; Zahlung laufen <strong>ausschließlich über Discord</strong>.</p>
     </section>
 
     <section class="grid">
@@ -100,11 +92,10 @@
         <div class="badge">30M/s</div>
         <div class="media">
           <img loading="lazy" alt="EsokSekolah"
-               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/EsokSekolah2.png?v=5">
+               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/EsokSekolah2.png">
         </div>
         <div class="content">
           <div class="title"><h3>EsokSekolah</h3><span class="price">€7,15</span></div>
-          <div class="meta">Leistung: 30M/s •<code>EsokSekolah</code></div>
         </div>
       </article>
 
@@ -112,11 +103,10 @@
         <div class="badge">50M/s</div>
         <div class="media">
           <img loading="lazy" alt="Garama and Madundung"
-               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Garamadundung.png?v=5">
+               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Garamadundung.png">
         </div>
         <div class="content">
           <div class="title"><h3>Garama and Madundung</h3><span class="price">€8,55</span></div>
-          <div class="meta">Leistung: 50M/s • <code>Garamadundung</code></div>
         </div>
       </article>
 
@@ -124,11 +114,10 @@
         <div class="badge">24.5M/s</div>
         <div class="media">
           <img loading="lazy" alt="La Spooky Grande"
-               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Spooky_Grande.png?v=5">
+               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Spooky_Grande.png">
         </div>
         <div class="content">
           <div class="title"><h3>La Spooky Grande</h3><span class="price">€4,50</span></div>
-          <div class="meta">Leistung: 24.5M/s •<code>Spooky_Grande</code></div>
         </div>
       </article>
 
@@ -136,11 +125,10 @@
         <div class="badge">600K/s</div>
         <div class="media">
           <img loading="lazy" alt="La Karkerkar Combinasion"
-               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Holy_falloff.png?v=5">
+               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Holy_falloff.png">
         </div>
         <div class="content">
           <div class="title"><h3>La Karkerkar Combinasion</h3><span class="price">€2,25</span></div>
-          <div class="meta">Leistung: 600K/s •<code>Holy_falloff</code></div>
         </div>
       </article>
 
@@ -148,29 +136,13 @@
         <div class="badge">2,5M/s</div>
         <div class="media">
           <img loading="lazy" alt="Pot Hotspot"
-               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Pot_Hotspot.png?v=5">
+               src="https://raw.githubusercontent.com/mac701707-cmyk/GleggisBrainrotShop/main/Pot_Hotspot.png">
         </div>
         <div class="content">
           <div class="title"><h3>Pot Hotspot</h3><span class="price">€3,40</span></div>
-          <div class="meta">Leistung: 2,5M/s •<code>Pot_Hotspot</code></div>
         </div>
       </article>
     </section>
-
-    <footer id="discord">
-      <h3>Infos &amp; Checkout</h3>
-      <div class="infos">
-        <div class="info-row"><strong>Bestellung &amp; Bezahlung:</strong> ausschließlich über Discord. Öffne <code>#bestellungen</code> oder schreibe <code>@Shop</code>.</div>
-        <div class="info-row"><strong>Dateien &amp; Namen:</strong> Exakt: <code>EsokSekolah2.png</code>, <code>Garamadundung.png</code>, <code>Spooky_Grande.png</code>, <code>Holy_falloff.png</code>, <code>Pot_Hotspot.png</code>.</div>
-        <div class="info-row"><strong>Layout:</strong> 2 • 2 • 1 (letzte Karte mittig). Voll responsive, rot/weiß/schwarz, smooth Hover-Effekte.</div>
-        <div class="info-row"><strong>Hosting:</strong> GitHub Pages — Branch <code>main</code>, Folder <code>/ (root)</code>.</div>
-      </div>
-      <p style="margin-top:14px">Discord-Invite:
-        <a class="cta" href="https://discord.gg/KEh2TVhdrz" target="_blank" rel="noopener">Beitreten</a>
-      </p>
-    </footer>
   </div>
 </body>
 </html>
-
-
