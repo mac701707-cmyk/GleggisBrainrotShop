@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steal‑A‑Brainrot — Katalog</title>
+  <meta name="description" content="Produktkatalog. Zahlung & Support ausschließlich über Discord." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0a0a;         /* Schwarz (Hintergrund) */
+      --card:#111214;       /* sehr dunkles Grau */
+      --card-2:#16171a;     /* leicht heller für Layering */
+      --text:#f6f7fb;       /* Weiß */
+      --muted:#a9adb7;      /* Grau */
+      --red:#ff2b2b;        /* Akzent Rot */
+      --red-2:#ff4949;      /* Hover Rot */
+      --line:#1e2025;       /* Divider */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background: radial-gradient(1200px 600px at 80% -10%, rgba(255,43,43,.12), transparent 60%) ,
+                             radial-gradient(900px 500px at -10% 110%, rgba(255,43,43,.08), transparent 60%),
+                             var(--bg);
+      color:var(--text); font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.5;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:1100px; margin:0 auto; padding:28px 16px 48px}
+
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 0 18px; border-bottom:1px solid var(--line)}
+    .brand{display:flex; align-items:center; gap:10px}
+    .dot{width:10px; height:10px; border-radius:999px; background:var(--red); box-shadow:0 0 16px rgba(255,43,43,.6)}
+    .brand h1{margin:0; font-size:20px; letter-spacing:.5px}
+    .cta{display:inline-flex; align-items:center; gap:10px; text-decoration:none; font-weight:700; padding:10px 14px; border-radius:12px; background:var(--red); color:#fff; box-shadow:var(--shadow); transition:transform .12s ease, background .2s ease}
+    .cta:hover{background:var(--red-2); transform:translateY(-1px)}
+
+    .hero{display:grid; grid-template-columns:1fr; gap:10px; padding:24px 0 10px}
+    .hero h2{margin:0; font-size:28px}
+    .hero p{margin:0; color:var(--muted)}
+
+    /* GRID 2-2-1 */
+    .grid{display:grid; grid-template-columns:repeat(2, minmax(260px,1fr)); gap:18px; margin-top:22px}
+    @media(max-width:720px){ .grid{grid-template-columns:1fr} }
+
+    .card{position:relative; background:linear-gradient(180deg, var(--card), var(--card-2)); border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:var(--shadow); transition:transform .18s ease, box-shadow .18s ease}
+    .card:hover{transform:translateY(-3px); box-shadow:0 16px 36px rgba(0,0,0,.45)}
+    .media{aspect-ratio: 16/10; background:#0d0e10; display:grid; place-items:center; overflow:hidden}
+    .media img{width:100%; height:100%; object-fit:cover; display:block}
+    .badge{position:absolute; top:10px; left:10px; background:rgba(255,43,43,.12); color:#fff; border:1px solid rgba(255,43,43,.35); padding:6px 10px; font-size:12px; border-radius:999px; backdrop-filter: blur(6px)}
+    .content{padding:14px 14px 16px}
+    .title{display:flex; align-items:center; justify-content:space-between; gap:8px}
+    .title h3{margin:0; font-size:18px}
+    .price{font-weight:800; color:#fff; background:rgba(255,43,43,.14); border:1px solid rgba(255,43,43,.35); padding:6px 10px; border-radius:10px}
+    .meta{margin-top:6px; color:var(--muted); font-size:14px}
+
+    /* Letzte Karte mittig (2-2-1 Layout) */
+    .card.last{grid-column:1 / -1; justify-self:center; width:100%; max-width:540px}
+
+    footer{margin-top:38px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:14px}
+    .infos{margin-top:16px; display:grid; gap:10px}
+    .info-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; background:#0e0f12; border:1px solid var(--line); border-radius:12px; padding:10px 12px}
+    .info-row strong{color:#fff}
+    code{background:#0e0f12; border:1px solid var(--line); padding:2px 6px; border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="dot"></span>
+        <h1>Steal‑A‑Brainrot • Katalog</h1>
+      </div>
+      <a class="cta" href="#discord">Zum Discord → Checkout</a>
+    </header>
+
+    <section class="hero">
+      <h2>Produkte</h2>
+      <p>Reines Info‑Listing. Bestellung & Zahlung laufen <strong>ausschließlich über Discord</strong>. Theme: Rot/Weiß/Schwarz — clean, smooth.</p>
+    </section>
+
+    <!-- GRID 2 / 2 / 1 -->
+    <section class="grid">
+      <!-- 1) EsokSekolah -->
+      <article class="card">
+        <div class="badge">30M/s</div>
+        <div class="media">
+          <img src="images/EsokSekolah2.png" alt="EsokSekolah" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>EsokSekolah</h3>
+            <span class="price">€7,15</span>
+          </div>
+          <div class="meta">Leistung: 30M/s • Bilddatei: <code>EsokSekolah2</code></div>
+        </div>
+      </article>
+
+      <!-- 2) Garama and Madundung -->
+      <article class="card">
+        <div class="badge">50M/s</div>
+        <div class="media">
+          <img src="images/Garamadundung.png" alt="Garama and Madundung" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>Garama and Madundung</h3>
+            <span class="price">€8,55</span>
+          </div>
+          <div class="meta">Leistung: 50M/s • Bilddatei: <code>Garamadundung</code></div>
+        </div>
+      </article>
+
+      <!-- 3) La Spooky Grande -->
+      <article class="card">
+        <div class="badge">24.5M/s</div>
+        <div class="media">
+          <img src="images/Spooky_Grande.png" alt="La Spooky Grande" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>La Spooky Grande</h3>
+            <span class="price">€4,50</span>
+          </div>
+          <div class="meta">Leistung: 24.5M/s • Bilddatei: <code>Spooky_Grande</code></div>
+        </div>
+      </article>
+
+      <!-- 4) La Karkerkar Combinasion -->
+      <article class="card">
+        <div class="badge">600K/s</div>
+        <div class="media">
+          <img src="images/Holy_falloff.png" alt="La Karkerkar Combinasion" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>La Karkerkar Combinasion</h3>
+            <span class="price">€2,25</span>
+          </div>
+          <div class="meta">Leistung: 600K/s • Bilddatei: <code>Holy_falloff</code></div>
+        </div>
+      </article>
+
+      <!-- 5) Pot Hotspot (zentriert) -->
+      <article class="card last">
+        <div class="badge">2,5M/s</div>
+        <div class="media">
+          <img src="images/Pot_Hotspot.png" alt="Pot Hotspot" />
+        </div>
+        <div class="content">
+          <div class="title">
+            <h3>Pot Hotspot</h3>
+            <span class="price">€3,40</span>
+          </div>
+          <div class="meta">Leistung: 2,5M/s • Bilddatei: <code>Pot_Hotspot</code></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- INFOS GANZ UNTEN -->
+    <footer id="discord">
+      <h3>Infos & Checkout</h3>
+      <div class="infos">
+        <div class="info-row"><strong>Bestellung & Bezahlung:</strong> ausschließlich über Discord. Tritt bei und öffne <code>#bestellungen</code> oder schreibe eine DM an <code>@Shop</code>.</div>
+        <div class="info-row"><strong>Dateistruktur für Bilder:</strong> Lege alle Bilddateien in <code>/images/</code> ab und benenne sie exakt so: <code>EsokSekolah2.png</code>, <code>Garamadundung.png</code>, <code>Spooky_Grande.png</code>, <code>Holy_falloff.png</code>, <code>Pot_Hotspot.png</code>. (Wenn deine Dateien .jpg oder .webp sind, einfach die Endung hier und im Ordner anpassen.)</div>
+        <div class="info-row"><strong>Layout:</strong> 2 • 2 • 1 (letzte Karte mittig). Voll responsive, rot/weiß/schwarz Steal‑A‑Brainrot‑Style, smooth Hover‑Effekte.</div>
+        <div class="info-row"><strong>Hosting-Hinweis:</strong> Für GitHub Pages lade diese <code>index.html</code> und den Ordner <code>/images</code> ins Repo (<code>main</code>, Root). Aktiviere danach <em>Settings → Pages</em> → <em>Deploy from a branch</em>.</div>
+      </div>
+      <p style="margin-top:14px">Discord‑Invite: <a class="cta" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Beitreten</a></p>
+    </footer>
+  </div>
+</body>
+</html>
